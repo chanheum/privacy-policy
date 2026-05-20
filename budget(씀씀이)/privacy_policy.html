@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 - 가계부</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+            background-color: #f2f2f7;
+            color: #1c1c1e;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        header {
+            margin-bottom: 36px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1c1c1e;
+            margin-bottom: 6px;
+        }
+
+        header .date {
+            font-size: 14px;
+            color: #8e8e93;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .section h2 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1c1c1e;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        .section p {
+            font-size: 15px;
+            color: #3a3a3c;
+            margin-bottom: 10px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .sub-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #3a3a3c;
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            font-size: 15px;
+            color: #3a3a3c;
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            background-color: #f2f2f7;
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 14px;
+            color: #636366;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f2f2f7;
+            color: #636366;
+            font-weight: 600;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        td {
+            padding: 10px 12px;
+            color: #3a3a3c;
+            border-bottom: 1px solid #f2f2f7;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #e5f0ff;
+            color: #007aff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 20px;
+            margin-right: 4px;
+        }
+
+        .badge.optional {
+            background-color: #e8f8f0;
+            color: #34c759;
+        }
+
+        .contact-box {
+            background-color: #f2f2f7;
+            border-radius: 10px;
+            padding: 16px;
+            margin-top: 10px;
+        }
+
+        .contact-box p {
+            font-size: 15px;
+            color: #3a3a3c;
+            margin-bottom: 6px;
+        }
+
+        .contact-box a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #aeaeb2;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>개인정보처리방침</h1>
+            <p class="date">시행일: 2026년 5월 20일</p>
+        </header>
+
+        <!-- 1. 수집하는 개인정보 -->
+        <div class="section">
+            <h2>1. 수집하는 개인정보 항목</h2>
+
+            <p class="sub-title"><span class="badge">필수</span> 로그인 정보 (Google / Facebook)</p>
+            <ul>
+                <li>이름, 이메일 주소, 프로필 사진</li>
+            </ul>
+
+            <p class="sub-title"><span class="badge">필수</span> 가계부 데이터</p>
+            <ul>
+                <li>사용자가 직접 입력하거나 알림을 통해 자동 등록된 수입·지출 내역</li>
+                <li>금액, 카테고리, 날짜, 메모</li>
+            </ul>
+
+            <p class="sub-title"><span class="badge optional">선택</span> 알림 접근</p>
+            <ul>
+                <li>알림 자동 등록 기능 사용 시, 기기에 수신된 알림 제목 및 내용</li>
+                <li>결제 금액 추출 목적으로만 사용되며, 서버에 전송되지 않습니다</li>
+                <li>금액·카테고리 추출 후 즉시 파기됩니다</li>
+            </ul>
+
+            <p class="sub-title"><span class="badge optional">선택</span> 광고 식별자</p>
+            <ul>
+                <li>Google AdMob SDK를 통한 광고 식별자 (GAID)</li>
+            </ul>
+        </div>
+
+        <!-- 2. 수집 목적 -->
+        <div class="section">
+            <h2>2. 개인정보 수집 목적</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>항목</th>
+                        <th>이용 목적</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>로그인 정보</td>
+                        <td>계정 인증 및 사용자 식별</td>
+                    </tr>
+                    <tr>
+                        <td>가계부 데이터</td>
+                        <td>수입·지출 내역 저장 및 통계 제공</td>
+                    </tr>
+                    <tr>
+                        <td>알림 내용</td>
+                        <td>카드·은행 알림에서 결제 금액 자동 추출</td>
+                    </tr>
+                    <tr>
+                        <td>광고 식별자</td>
+                        <td>맞춤형 광고 제공 (Google AdMob)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 3. 보유 및 이용 기간 -->
+        <div class="section">
+            <h2>3. 개인정보 보유 및 이용 기간</h2>
+            <ul>
+                <li><strong>가계부 데이터:</strong> 회원 탈퇴 또는 삭제 요청 시 즉시 파기</li>
+                <li><strong>로그인 정보:</strong> Google / Facebook 계정 연동 해제 시 삭제</li>
+                <li><strong>알림 내용:</strong> 금액 추출 후 앱 내에서 즉시 파기, 저장하지 않음</li>
+            </ul>
+        </div>
+
+        <!-- 4. 제3자 제공 및 위탁 -->
+        <div class="section">
+            <h2>4. 제3자 제공 및 위탁</h2>
+            <p>본 앱은 아래 서비스를 이용하며, 각 서비스의 개인정보처리방침을 따릅니다.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>서비스</th>
+                        <th>목적</th>
+                        <th>운영사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase Authentication</td>
+                        <td>소셜 로그인 인증</td>
+                        <td>Google LLC</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Realtime Database</td>
+                        <td>가계부 데이터 저장</td>
+                        <td>Google LLC</td>
+                    </tr>
+                    <tr>
+                        <td>Google AdMob</td>
+                        <td>배너·전면 광고 제공</td>
+                        <td>Google LLC</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook Login SDK</td>
+                        <td>페이스북 로그인 인증</td>
+                        <td>Meta Platforms, Inc.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight">
+                개인정보는 위 서비스 제공 목적 이외에 제3자에게 제공하지 않습니다.
+            </div>
+        </div>
+
+        <!-- 5. 이용자의 권리 -->
+        <div class="section">
+            <h2>5. 이용자의 권리</h2>
+            <p>이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+            <ul>
+                <li><strong>데이터 삭제:</strong> 앱 내 설정 → 로그아웃 후 계정 데이터 삭제 요청</li>
+                <li><strong>알림 접근 권한 철회:</strong> 기기 설정 → 앱 → 알림 접근 권한 해제</li>
+                <li><strong>광고 맞춤화 거부:</strong> 기기 설정 → Google → 광고 → 광고 개인최적화 해제</li>
+            </ul>
+        </div>
+
+        <!-- 6. 아동 보호 -->
+        <div class="section">
+            <h2>6. 아동 개인정보 보호</h2>
+            <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+        </div>
+
+        <!-- 7. 보안 -->
+        <div class="section">
+            <h2>7. 개인정보 보안</h2>
+            <p>수집된 개인정보는 Firebase의 보안 규칙을 통해 인증된 사용자 본인만 접근할 수 있도록 보호됩니다. 타인의 데이터에는 접근할 수 없습니다.</p>
+        </div>
+
+        <!-- 8. 방침 변경 -->
+        <div class="section">
+            <h2>8. 개인정보처리방침 변경</h2>
+            <p>방침이 변경될 경우 앱 내 공지 또는 업데이트를 통해 사전 안내합니다.</p>
+        </div>
+
+        <!-- 9. 문의 -->
+        <div class="section">
+            <h2>9. 문의</h2>
+            <p>개인정보 관련 문의사항은 아래로 연락해 주세요.</p>
+            <div class="contact-box">
+                <p>📧 이메일: <a href="mailto:jkpopo2011@gmail.com">jkpopo2011@gmail.com</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 가계부. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
